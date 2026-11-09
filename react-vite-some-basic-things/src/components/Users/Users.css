@@ -1,0 +1,217 @@
+.users > h1 {
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.users-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.users-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-card {
+  padding: 1.25rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  background: #fff;
+  color: #1f2937;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+}
+
+.user-card-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.user-card-heading h2 {
+  margin: 0;
+  color: #111827;
+  overflow-wrap: anywhere;
+}
+
+.user-actions {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 0.5rem;
+}
+
+.user-action {
+  display: grid;
+  width: 2.25rem;
+  height: 2.25rem;
+  place-items: center;
+  margin: 0;
+  padding: 0.45rem;
+  border: 0;
+  border-radius: 0.4rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.user-action svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.user-action-edit {
+  background: #2563eb;
+}
+
+.user-action-edit:hover {
+  background: #1d4ed8;
+}
+
+.user-action-delete {
+  background: #dc2626;
+}
+
+.user-action-delete:hover {
+  background: #b91c1c;
+}
+
+.user-details {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+}
+
+.user-details > div {
+  display: grid;
+  grid-template-columns: 5.5rem minmax(0, 1fr);
+  gap: 0.5rem;
+}
+
+.user-details dt {
+  font-weight: 600;
+}
+
+.user-details dd {
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.user-card a {
+  color: #1d4ed8;
+}
+
+.user-section {
+  margin-top: 1.25rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.user-section h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.user-section p {
+  margin: 0.3rem 0;
+  overflow-wrap: anywhere;
+}
+
+.add-user-panel {
+  position: sticky;
+  top: 1rem;
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+  padding: 1.25rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+}
+
+.add-user-panel h2 {
+  margin: 0 0 1rem;
+  color: #111827;
+}
+
+.add-user-fields {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.add-user-fields label {
+  display: grid;
+  gap: 0.3rem;
+  color: #374151;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.add-user-fields input {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.4rem;
+  color: #111827;
+  font: inherit;
+}
+
+.add-user-fields input:focus {
+  border-color: #2563eb;
+  outline: 2px solid rgb(37 99 235 / 20%);
+}
+
+.add-user-fields fieldset {
+  display: grid;
+  gap: 0.75rem;
+  min-width: 0;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+}
+
+.add-user-fields legend {
+  padding: 0 0.35rem;
+  color: #111827;
+  font-weight: 600;
+}
+
+.add-user-button {
+  width: 100%;
+  margin: 1rem 0 0;
+  padding: 0.7rem 1rem;
+  background: #103358;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+}
+
+.add-user-button:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 800px) {
+  .users-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .add-user-panel {
+    position: static;
+    max-height: none;
+  }
+}

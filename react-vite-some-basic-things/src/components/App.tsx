@@ -6,6 +6,7 @@ import viteSvg from '../assets/img/vite.svg'
 import States from './States/States.tsx'
 import UseEffectComponent from './UseEffect/UseEffect.tsx'
 import UseRef from './UseRef/UseRef.tsx'
+import Users from './Users/Users.tsx'
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
       <UseEffectComponent nameButton="Click Me" />
       <hr />
       <UseRef />
+      <hr />
+      <Users/>
     </div>
   )
 }
