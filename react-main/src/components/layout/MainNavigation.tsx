@@ -1,0 +1,26 @@
+import { NavLink } from 'react-router-dom'
+
+function MainNavigation() {
+  return (
+    <nav aria-label="Головне меню" className="main-menu">
+      <NavLink to="/model-view">Model View</NavLink>
+      <NavLink to="/event">Event</NavLink>
+      <NavLink to="/input-decorator">Input Decorator</NavLink>
+      <NavLink to="/output-parent">Output Parent</NavLink>
+      <NavLink to="/for">For</NavLink>
+      <NavLink to="/if">If</NavLink>
+      <NavLink to="/class">Class</NavLink>
+      <NavLink to="/style">Style</NavLink>
+      <NavLink to="/switch">Switch</NavLink>
+      <NavLink to="/datetime">DateTime</NavLink>
+      <NavLink to="/number">Number</NavLink>
+      <NavLink to="/string">String</NavLink>
+      <NavLink to="/json">JSON</NavLink>
+      <NavLink to="/math">Math</NavLink>
+
+      {/* <NavLink to="/section">Sub menu</NavLink> */}
+    </nav>
+  )
+}
+
+export default MainNavigation

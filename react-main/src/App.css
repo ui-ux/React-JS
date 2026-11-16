@@ -1,0 +1,145 @@
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-header {
+  padding: 1rem 1.5rem;
+  background: #1f2937;
+}
+
+.app-title {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.app-body {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  min-height: calc(100vh - 56px);
+}
+
+.sidebar {
+  padding: 1rem;
+  border-right: 1px solid #d1d5db;
+  background: #f3f4f6;
+}
+
+.main-menu,
+.section-menu {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.main-menu a,
+.section-menu a {
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.35rem;
+  color: #374151;
+  text-decoration: none;
+}
+
+.main-menu a:hover,
+.section-menu a:hover,
+.main-menu a.active,
+.section-menu a.active {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.page-content {
+  padding: 1.5rem;
+}
+
+.page-content h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+}
+
+.page-content h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+}
+
+.section-menu {
+  grid-template-columns: repeat(auto-fit, minmax(140px, max-content));
+  margin: 1rem 0;
+}
+
+.nested-content {
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+}
+
+.model-view-table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.model-view-table th,
+.model-view-table td {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  vertical-align: top;
+}
+
+.model-view-table th {
+  background: #f3f4f6;
+}
+
+.model-view-table code {
+  overflow-wrap: anywhere;
+}
+
+.model-view-table input {
+  max-width: 100%;
+  padding: 0.4rem;
+}
+
+.event-example {
+  display: grid;
+  justify-items: start;
+  gap: 0.75rem;
+  max-width: 32rem;
+}
+
+.event-example h3 {
+  margin: 0;
+}
+
+.event-example input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 0.75rem;
+
+  border: 0;
+  border-radius: 0.35rem;
+  color: #fff;
+  background: #1d4ed8;
+  cursor: pointer;
+}
+button {
+  margin: 0.5rem;
+}
+
+.event-message {
+  min-height: 1.5em;
+}
+
+@media (max-width: 600px) {
+  .app-body {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: 0;
+    border-bottom: 1px solid #d1d5db;
+  }
+}

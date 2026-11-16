@@ -1,0 +1,45 @@
+.input-decorator-example {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+}
+
+.input-decorator-example h3 {
+  margin: 0 0 0.75rem;
+}
+
+.input-decorator-table {
+  width: 100%;
+  margin: 0.75rem 0 1.25rem;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.input-decorator-table th,
+.input-decorator-table td {
+  padding: 0.65rem;
+  border: 1px solid #d1d5db;
+  vertical-align: top;
+}
+
+.input-decorator-table th {
+  background: #f3f4f6;
+}
+
+.input-decorator-table code {
+  overflow-wrap: anywhere;
+}
+
+.input-values-child {
+  margin-top: 1.25rem;
+}
+
+.input-values-child h3,
+.parent-callback-child h4 {
+  margin: 0 0 0.5rem;
+}
+
+.parent-callback-child {
+  margin-top: 1rem;
+}
