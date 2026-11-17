@@ -14,12 +14,15 @@ import IfPage from '../components/pages/07_IfPage/IfPage'
 import ClassPage from '../components/pages/08_ClassPage/ClassPage'
 import StylePage from '../components/pages/09_StylePage/StylePage'
 import SwitchPage from '../components/pages/10_SwitchPage/SwitchPage'
-import PipesPage from '../components/pages/11_1_DateTimePagPage/DateTimePagPage'
 import DateTimePage from '../components/pages/11_1_DateTimePagPage/DateTimePagPage'
 import NumberPage from '../components/pages/11_2_NumberPage/NumberPage'
 import StringPage from '../components/pages/11_3_StringPage/StringPage'
 import JsonPage from '../components/pages/11_4_JsonPage/JsonPage'
 import MathPage from '../components/pages/11_5_MathPage/MathPage'
+import FormsPage from '../components/pages/12_1_1_FormsPage/FormsPage'
+import UncontrolledFormsPage from '../components/pages/12_1_2_UncontrolledFormsPage/UncontrolledFormsPage'
+import FormValidationPage from '../components/pages/12_2_FormValidationPage/FormValidationPage'
+import DynamicFormPage from '../components/pages/12_3_DynamicFormPage/DynamicFormPage'
 
 function AppRoutes() {
   return (
@@ -41,6 +44,13 @@ function AppRoutes() {
           <Route path="string" element={<StringPage />} />
           <Route path="json" element={<JsonPage />} />
           <Route path="math" element={<MathPage />} />
+          <Route path="forms" element={<FormsPage />} />
+          <Route
+            path="uncontrolled-forms"
+            element={<UncontrolledFormsPage />}
+          />
+          <Route path="form-validation" element={<FormValidationPage />} />
+          <Route path="dynamic-forms" element={<DynamicFormPage />} />
 
           <Route path="section" element={<SectionLayout />}>
             <Route index element={<SectionHomePage />} />

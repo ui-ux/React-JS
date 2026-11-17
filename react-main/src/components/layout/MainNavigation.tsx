@@ -17,6 +17,10 @@ function MainNavigation() {
       <NavLink to="/string">String</NavLink>
       <NavLink to="/json">JSON</NavLink>
       <NavLink to="/math">Math</NavLink>
+      <NavLink to="/forms"> Controlled Form</NavLink>
+      <NavLink to="/uncontrolled-forms">Uncontrolled form</NavLink>
+      <NavLink to="/form-validation">Form validation</NavLink>
+      <NavLink to="/dynamic-forms">Dynamic forms</NavLink>
 
       {/* <NavLink to="/section">Sub menu</NavLink> */}
     </nav>

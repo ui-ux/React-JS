@@ -133,6 +133,59 @@ button {
   min-height: 1.5em;
 }
 
+.form-example {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+}
+
+.form-example h3,
+.form-example p {
+  margin: 0;
+}
+
+.form-fields {
+  display: grid;
+  justify-items: start;
+  gap: 0.6rem;
+  max-width: 32rem;
+}
+
+.form-fields input {
+  width: 100%;
+}
+
+.form-fields input[aria-invalid='true'] {
+  border-color: #b42318;
+}
+
+.error {
+  color: #b42318;
+}
+
+.dynamic-field,
+.dynamic-field-row,
+.form-actions {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.dynamic-field {
+  width: 100%;
+}
+
+.dynamic-field-row {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+}
+
+.form-actions {
+  grid-template-columns: repeat(auto-fit, minmax(10rem, max-content));
+}
+
 @media (max-width: 600px) {
   .app-body {
     grid-template-columns: 1fr;
