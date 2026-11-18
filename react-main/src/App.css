@@ -186,6 +186,58 @@ button {
   grid-template-columns: repeat(auto-fit, minmax(10rem, max-content));
 }
 
+.client-controls {
+  margin: 1rem 0;
+}
+
+.client-list {
+  display: grid;
+  gap: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.client-post {
+  max-width: 42rem;
+  margin-top: 1.25rem;
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+}
+
+.client-post h3 {
+  margin-top: 0;
+}
+
+.client-bulk-form {
+  display: grid;
+  justify-items: start;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.client-title-field {
+  display: grid;
+  gap: 0.4rem;
+  width: min(100%, 32rem);
+}
+
+.client-title-field input {
+  width: 100%;
+}
+
+.client-lessons {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.client-comparison {
+  overflow-x: auto;
+}
+
+.client-comparison table {
+  min-width: 42rem;
+}
+
 @media (max-width: 600px) {
   .app-body {
     grid-template-columns: 1fr;

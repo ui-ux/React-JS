@@ -23,6 +23,13 @@ import FormsPage from '../components/pages/12_1_1_FormsPage/FormsPage'
 import UncontrolledFormsPage from '../components/pages/12_1_2_UncontrolledFormsPage/UncontrolledFormsPage'
 import FormValidationPage from '../components/pages/12_2_FormValidationPage/FormValidationPage'
 import DynamicFormPage from '../components/pages/12_3_DynamicFormPage/DynamicFormPage'
+import PostsPage from '../components/pages/13_1_ClientPage/00_PostsPage/PostsPage'
+import PagedPostsPage from '../components/pages/13_1_ClientPage/01_PagedPostsPage/PagedPostsPage'
+import PostByIdPage from '../components/pages/13_1_ClientPage/02_PostByIdPage/PostByIdPage'
+import UpdatePostTitlePage from '../components/pages/13_1_ClientPage/03_UpdatePostTitlePage/UpdatePostTitlePage'
+import UpdateAllPostTitlesPage from '../components/pages/13_1_ClientPage/04_UpdateAllPostTitlesPage/UpdateAllPostTitlesPage'
+import DeletePostPage from '../components/pages/13_1_ClientPage/05_DeletePostPage/DeletePostPage'
+import ClientLessonsLayout from '../components/pages/13_1_ClientPage/ClientLessonsLayout'
 
 function AppRoutes() {
   return (
@@ -51,6 +58,54 @@ function AppRoutes() {
           />
           <Route path="form-validation" element={<FormValidationPage />} />
           <Route path="dynamic-forms" element={<DynamicFormPage />} />
+          <Route
+            path="client"
+            element={
+              <ClientLessonsLayout>
+                <PostsPage />
+              </ClientLessonsLayout>
+            }
+          />
+          <Route
+            path="client-paged"
+            element={
+              <ClientLessonsLayout>
+                <PagedPostsPage />
+              </ClientLessonsLayout>
+            }
+          />
+          <Route
+            path="client-post-by-id"
+            element={
+              <ClientLessonsLayout>
+                <PostByIdPage />
+              </ClientLessonsLayout>
+            }
+          />
+          <Route
+            path="client-update-title"
+            element={
+              <ClientLessonsLayout>
+                <UpdatePostTitlePage />
+              </ClientLessonsLayout>
+            }
+          />
+          <Route
+            path="client-update-all-titles"
+            element={
+              <ClientLessonsLayout>
+                <UpdateAllPostTitlesPage />
+              </ClientLessonsLayout>
+            }
+          />
+          <Route
+            path="client-delete-post"
+            element={
+              <ClientLessonsLayout>
+                <DeletePostPage />
+              </ClientLessonsLayout>
+            }
+          />
 
           <Route path="section" element={<SectionLayout />}>
             <Route index element={<SectionHomePage />} />

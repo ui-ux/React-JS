@@ -21,6 +21,14 @@ function MainNavigation() {
       <NavLink to="/uncontrolled-forms">Uncontrolled form</NavLink>
       <NavLink to="/form-validation">Form validation</NavLink>
       <NavLink to="/dynamic-forms">Dynamic forms</NavLink>
+      <NavLink to="/client">Client __ Load posts</NavLink>
+      <NavLink to="/client-paged">Client __ Paged posts</NavLink>
+      <NavLink to="/client-post-by-id">Client __ Post by ID</NavLink>
+      <NavLink to="/client-update-title">Client __ Update title</NavLink>
+      <NavLink to="/client-update-all-titles">
+        Client __ Update all titles
+      </NavLink>
+      <NavLink to="/client-delete-post">Client __ Delete post</NavLink>
 
       {/* <NavLink to="/section">Sub menu</NavLink> */}
     </nav>
