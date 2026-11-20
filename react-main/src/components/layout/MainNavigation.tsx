@@ -29,6 +29,10 @@ function MainNavigation() {
         Client __ Update all titles
       </NavLink>
       <NavLink to="/client-delete-post">Client __ Delete post</NavLink>
+      <NavLink to="/no-directive-highlight">No directive __ Highlight</NavLink>
+      <NavLink to="/no-directive-use-highlight">
+        No directive __ Highlight
+      </NavLink>
 
       {/* <NavLink to="/section">Sub menu</NavLink> */}
     </nav>

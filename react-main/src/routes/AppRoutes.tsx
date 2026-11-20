@@ -30,6 +30,8 @@ import UpdatePostTitlePage from '../components/pages/13_1_ClientPage/03_UpdatePo
 import UpdateAllPostTitlesPage from '../components/pages/13_1_ClientPage/04_UpdateAllPostTitlesPage/UpdateAllPostTitlesPage'
 import DeletePostPage from '../components/pages/13_1_ClientPage/05_DeletePostPage/DeletePostPage'
 import ClientLessonsLayout from '../components/pages/13_1_ClientPage/ClientLessonsLayout'
+import NoDirectiveHighlightPage from '../components/pages/14_HighlightPage/00_HighlightPage/00_HighlightPage'
+import NoDirectiveUseHighlightPage from '../components/pages/14_HighlightPage/01_useHighlight/01_HighlightPage'
 
 function AppRoutes() {
   return (
@@ -105,6 +107,15 @@ function AppRoutes() {
                 <DeletePostPage />
               </ClientLessonsLayout>
             }
+          />
+
+          <Route
+            path="no-directive-highlight"
+            element={<NoDirectiveHighlightPage />}
+          />
+          <Route
+            path="no-directive-use-highlight"
+            element={<NoDirectiveUseHighlightPage />}
           />
 
           <Route path="section" element={<SectionLayout />}>
