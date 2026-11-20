@@ -33,6 +33,7 @@ function MainNavigation() {
       <NavLink to="/no-directive-use-highlight">
         No directive __ Highlight
       </NavLink>
+      <NavLink to="/content-projection">Content projection</NavLink>
 
       {/* <NavLink to="/section">Sub menu</NavLink> */}
     </nav>

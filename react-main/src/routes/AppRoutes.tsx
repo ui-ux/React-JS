@@ -32,6 +32,7 @@ import DeletePostPage from '../components/pages/13_1_ClientPage/05_DeletePostPag
 import ClientLessonsLayout from '../components/pages/13_1_ClientPage/ClientLessonsLayout'
 import NoDirectiveHighlightPage from '../components/pages/14_HighlightPage/00_HighlightPage/00_HighlightPage'
 import NoDirectiveUseHighlightPage from '../components/pages/14_HighlightPage/01_useHighlight/01_HighlightPage'
+import ContentProjection from '../components/pages/15_ProjectionPage/ContentProjection'
 
 function AppRoutes() {
   return (
@@ -117,6 +118,8 @@ function AppRoutes() {
             path="no-directive-use-highlight"
             element={<NoDirectiveUseHighlightPage />}
           />
+
+          <Route path="content-projection" element={<ContentProjection />} />
 
           <Route path="section" element={<SectionLayout />}>
             <Route index element={<SectionHomePage />} />

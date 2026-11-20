@@ -1,0 +1,31 @@
+.card {
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #1f2937;
+}
+
+.card header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+}
+
+.card header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card footer {
+  display: flex;
+  gap: 10px;
+  padding: 16px 20px;
+  border-top: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+}
